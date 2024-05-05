@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail de la tâche</title>
+</head>
+<body>
+    <h1>Détail de la tâche</h1>
+    <p>Numéro de la tâche : {{ task.id }}</p>
+    <p>Titre de la tâche : {{ task.title }}</p>
+    <p>Description : {{ task.description }}</p>
+    <p>Complété : {{ 'Yes' if task.completed else 'No' }}</p>
+</body>
+</html>

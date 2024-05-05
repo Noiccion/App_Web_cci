@@ -1,0 +1,53 @@
+/* style.css */
+
+/* Style pour le titre principal */
+h1 {
+    color: #333; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+/* Style pour les sous-titres */
+h2 {
+    color: #666;
+    font-size: 20px;
+    margin-top: 30px; /* Marge en haut */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Style pour la liste des tâches */
+ul {
+    list-style-type: none; /* Supprime les puces de liste */
+    padding: 0;
+}
+
+/* Style pour chaque élément de la liste des tâches */
+li {
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Style pour le formulaire de création de tâche */
+#taskForm {
+    margin-top: 20px; /* Marge en haut */
+}
+
+/* Style pour les étiquettes du formulaire */
+label {
+    display: block; /* Afficher chaque étiquette sur une nouvelle ligne */
+    margin-bottom: 5px; /* Marge en bas */
+}
+
+/* Style pour le bouton de soumission du formulaire */
+button {
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    padding: 10px 20px; /* Remplissage (haut et bas, gauche et droite) */
+    cursor: pointer; /* Curseur de souris pointeur */
+    border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style pour le bouton de soumission du formulaire au survol */
+button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}

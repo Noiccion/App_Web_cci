@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches</title>
+    <link href="/project/app/static/css/task_list.css" rel="stylesheet" >
+</head>
+<body>
+    <h1>Liste des tâches</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Numéro de tâche</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Terminé</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+                <td>{{ 'Oui' if task.completed else 'Non' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

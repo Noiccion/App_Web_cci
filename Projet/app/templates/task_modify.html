@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification de la tâche</title>
+</head>
+<body>
+    <h1>Modification de la tâche</h1>
+    <form action="{{ url_for('update_task', task_id=task.id) }}" method="POST">
+        <label for="title">Titre :</label>
+        <input type="text" id="title" name="title" value="{{ task.title }}"><br>
+    
+        <label for="description">Description :</label>
+        <textarea id="description" name="description">{{ task.description }}</textarea><br>
+    
+        <input type="checkbox" id="completed" name="completed" {% if task.completed %}checked{% endif %}>
+        <label for="completed">Terminé</label><br>
+    
+        <button type="submit">Modifier</button>
+    </form>
+</body>
+</html>

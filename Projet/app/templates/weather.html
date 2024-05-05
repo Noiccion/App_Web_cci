@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Météorologiques</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Informations Météorologiques</h1>
+    <div id="weather-info">
+        <h2>Météo Actuelle</h2>
+        <p>Ville : {{ weather_data['name']}}</p>
+        <p>Température : {{ "%.2f"|format((weather_data['main']['temp'] - 273.15)) }}°C</p>
+        <p>Humidité : {{ weather_data['main']['humidity'] }}%</p>
+        <p>Conditions Météorologiques : {{ weather_data['weather'][0]['description'] }}</p>
+    </div>
+</body>
+</html>
